@@ -1,0 +1,24 @@
+info:
+  name: 4. POST Crear Marca
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:8089/api/marcas
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Toyota"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc5NDU0NjI1NCwiZXhwIjoxNzk0NTgyMjU0fQ.dBWCI0EH9SF5q124tixhLDV769saWQq7be-Sq1agv8Jf4O5eI7lY53BMw9MNH-Vr
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
